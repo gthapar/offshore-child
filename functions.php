@@ -10,3 +10,12 @@ function offshore_child_lang_setup() {
 	load_child_theme_textdomain( 'offshore', $lang );
 }
 add_action( 'after_setup_theme', 'offshore_child_lang_setup' );
+
+/**
+ *  Example on how to use 'offshore_meta_tags' filter to modify meta tags
+ */
+// add_filter( 'offshore_meta_tags', 'offshore_modify_tags' );
+// function offshore_modify_tags( $tags ){
+//     $tags = array();
+//     return $tags;
+// }
